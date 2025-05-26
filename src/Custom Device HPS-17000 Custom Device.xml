@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>HPS-17000 Custom Device</eng>
+    <loc>HPS-17000 Custom Device</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>04f632e1-4a14-4b46-b342-fa2f795eb632</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\HPS-17000 Custom Device\Windows\HPS-17000 Custom Device Configuration.lvlibp\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+    <SourceDistribution>
+      <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\HPS-17000 Custom Device\Windows\HPS-17000 Custom Device Engine Windows.lvlibp\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\HPS-17000 Custom Device\HPS-17000 Custom Device Engine Windows.lvlibp\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\HPS-17000 Custom Device\Linux_x64\HPS-17000 Custom Device Engine Linux64.lvlibp\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\HPS-17000 Custom Device\HPS-17000 Custom Device Engine Linux64.lvlibp\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+    </SourceDistribution>
+  </CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>HPS-17000 Custom Device</eng>
+        <loc>HPS-17000 Custom Device</loc>
+      </Name>
+      <GUID>04f632e1-4a14-4b46-b342-fa2f795eb632</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\default fpga category.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\HPS-17000 Custom Device\Windows\HPS-17000 Custom Device Configuration.lvlibp\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>27edfe9d-baf3-4412-aaa0-e4fe7dbcbcaf</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\HPS-17000 Custom Device\Windows\HPS-17000 Custom Device Configuration.lvlibp\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>27edfe9d-baf3-4412-aaa0-e4fe7dbcbcaf-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>27edfe9d-baf3-4412-aaa0-e4fe7dbcbcaf</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+      <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\HPS-17000 Custom Device\Windows\HPS-17000 Custom Device Configuration.lvlibp\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+    </Page>
+    
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
