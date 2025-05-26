@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="81100A9A7A9F8A326316443DB8AA8874729A36A785D0210BF9F6B3139DC994C3D2D9F423CD5F3F236E42E5A067359778E0E0AAF1EEC94B3D90C95D09A0BD23AD" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="9.10.1.49573" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="9.10.1.49573" FeatureSetName="VeriStand Core Components" Name="http://www.ni.com/VeriStand" OldestCompatibleVersion="9.0.0.49152" Version="9.0.0.49152" />
+		<ApplicationVersionInfo Build="10.8.0.49573" Name="VeriStand" Version="9.10.1.49573" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="1" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="2" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="4" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<EmbeddedDefinitionReference Id="5" ModelDefinitionType="GatewayDefinition" Name="Gateway" Reparentable="False">
+				<GatewayDefinition xmlns="http://www.ni.com/VeriStand" />
+			</EmbeddedDefinitionReference>
+			<FileReference Bindings=".nivscf" Id="9108c4cc2a974d51b9d3c6ded125a3a1" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="HPS-17000 Cycler Example.nivscf" StoragePath="HPS-17000 Cycler Example.nivscf" />
+			<SourceFileReference Id="74e82da4dcda48fd977ef7811990ba5b" ModelDefinitionType="{http://www.ni.com/VeriStand}Screen" Name="HPS-17000 Cycler Example.nivsscr" StoragePath="HPS-17000 Cycler Example.nivsscr" />
+			<FileReference Bindings=".nivsscreen" Id="c197bd04f69e4d7aa253fbe5b03afb5e" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="HPS-17000 Cycler Example.nivsscreen" StoragePath="HPS-17000 Cycler Example.nivsscreen" />
+			<FileReference Bindings=".nivsproj" Id="e58a6756977f4bd698d0aee4c586ba90" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="HPS-17000 Cycler Example.nivsproj" StoragePath="HPS-17000 Cycler Example.nivsproj" />
+			<SourceFileReference Bindings="EnvoyManager" Id="aec3b18fc36e4eb5ad052522da872aa2" ModelDefinitionType="{http://www.ni.com/VeriStand}SystemDefinition" Name="HPS-17000 Cycler Example.nivssdf" StoragePath="HPS-17000 Cycler Example.nivssdf" />
+			<EmbeddedDefinitionReference Id="3976fc50c28e485d8aef8813931e2888" ModelDefinitionType="SdfFilePath" Name="SdfPath" Reparentable="False">
+				<SdfFilePath SdfPath="HPS-17000 Cycler Example.nivssdf" xmlns="http://www.ni.com/VeriStand" />
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework" />
+</SourceFile>
